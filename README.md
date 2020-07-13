@@ -1,6 +1,9 @@
 # File-Sorter
 
-An application built to help you sort your files into dedicated folders
+<p align="center">
+    <img src="assets/Logo.PNG" alt="Logo" border="0">
+    <br>Built to help you sort your files into dedicated folders
+</p>
 
 
 ## Contributing 
