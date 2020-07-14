@@ -21,4 +21,11 @@ if __name__ == "__main__":
                     shutil.move(current_file,category)
                     break
 
+    
+    files = filter(os.path.isfile, os.listdir(os.curdir))
+    for current_file in files:
+        category = "Other"
+        if not os.path.exists(category):
+            os.makedirs(category)
+        shutil.move(current_file,category)
     print("Sorting Completed...")
