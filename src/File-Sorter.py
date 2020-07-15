@@ -1,9 +1,17 @@
 import os
 import shutil
 from modules.extensions import *
+import time
 
 if __name__ == "__main__":
     os.system('cls')
+    logo = open("../assets/logo.txt","r")
+    output = "".join(logo.readlines())
+    print(output)
+    print("\n"+"-"*20)
+    version = open("../assets/version.txt" , "r").read()
+    print("File Sorter | " + version)
+    time.sleep(1)
     destination = input("\nEnter the address of the folder you want to organise \n> ")
     try:
         os.chdir(destination)
