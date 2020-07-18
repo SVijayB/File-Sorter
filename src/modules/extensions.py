@@ -1,5 +1,3 @@
-import pickle
-
 list_images = [
     ".jpeg",".jpg",".png",".gif",".webp",".tiff",".psd",".raw",".bmp",".heif",".indd",".svg",".ico"
     ]
