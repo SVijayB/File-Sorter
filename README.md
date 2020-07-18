@@ -1,7 +1,7 @@
 # File-Sorter
 
 <p align="center">
-    <img src="assets/Logo.PNG" alt="Logo" border="0">
+    <img src="assets/images/Logo.PNG" alt="Logo" border="0">
     <br>Built to help you sort your files into dedicated folders
 </p>
 
