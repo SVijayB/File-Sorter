@@ -18,13 +18,14 @@ def functions_main():
         new_extension = input("Enter the extension you want to add. Eg: EXE,PNG,JPEG\n> ")
             
         new_extension = ("." + new_extension)
-        extensions[category].append(new_extension)
-
-        pickle_file = open("assets/extensions_data.pkl", 'wb')
-        pickle.dump(extensions, pickle_file)
-        pickle_file.close()
-            
-        print("Extension has been added")
+        try:
+            extensions[category].append(new_extension)
+            pickle_file = open("assets/extensions_data.pkl", 'wb')
+            pickle.dump(extensions, pickle_file)
+            pickle_file.close()   
+            print("Extension has been added")
+        except:
+            print("ERROR : CATEGORY DOES NOT EXIST")
 
     elif(choice == 2):
         key = input("Enter the new category to be added\n> ").capitalize() 
@@ -41,26 +42,37 @@ def functions_main():
     elif(choice == 3):
         for ex in extensions:
             print("• " + ex)
-        category = input("Which category does the extension belong to? (Type the exact name)\n> ").capitalize()
-        for y in range(len(extensions[category])):
-            print(extensions[category][y])
-        del_extension = input("Enter the extension you want to delete. Eg: EXE,PNG,JPEG\n> ")
-        del_extension = ("." + del_extension)
-        extensions[category].remove(del_extension)
 
-        pickle_file = open("assets/extensions_data.pkl", 'wb')
-        pickle.dump(extensions, pickle_file)
-        pickle_file.close()
-            
-        print("Extension has been Deleted!")
+        category = input("Which category does the extension belong to? (Type the exact name)\n> ").capitalize()
+        try:
+            for y in range(len(extensions[category])):
+                print(extensions[category][y])
+
+            del_extension = input("Enter the extension you want to delete. Eg: EXE,PNG,JPEG\n> ")
+            del_extension = ("." + del_extension)
+            extensions[category].remove(del_extension)
+
+            pickle_file = open("assets/extensions_data.pkl", 'wb')
+            pickle.dump(extensions, pickle_file)
+            pickle_file.close()
+            print("Extension has been Deleted!")
+        except:
+            print("ERROR : CATEGORY DOES NOT EXIST")
 
     elif(choice == 4):
         for ex in extensions:
             print("• " + ex)
         category = input("Which category does the extension belong to? (Type the exact name)\n> ").capitalize()
-        for y in range(len(extensions[category])):
-            print("\t->",extensions[category][y])
+        try:
+            for y in range(len(extensions[category])):
+                print("\t->",extensions[category][y])
+        except:
+            print("ERROR : CATEGORY DOES NOT EXIST")
 
     else:
         print(choice)
         print("ERROR : INVALID OPTION")
+
+
+functions_main()
+

@@ -17,7 +17,6 @@ if __name__ == "__main__":
     grey(output)
     green("\n"+"-"*20)
     version = open("../assets/version.txt" , "r").read()
-    cyan("File Sorter | " + version)
     time.sleep(1)
 
     reset()
