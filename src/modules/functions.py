@@ -15,6 +15,7 @@ def updating():
     while(True):
         print("1) Add an extension to an already existing category")
         print("2) Add an extension to a new catagory")
+        print("3) Delete an extension")
         choice = int(input("What would you like to do?\n> "))
         
         pickle_file = open("assets/extensions_data.pkl", 'rb')
@@ -40,7 +41,20 @@ def updating():
             break
 
         elif(choice == 2):
-            pass
+            key = input("Enter the new category to be added\n> ").capitalize() 
+            value = input("Enter the extension\n> ")
+            value = ("." + value)
+            extensions[key] = [value]
+
+            print(extensions)
+
+            pickle_file = open("assets/extensions_data.pkl", 'wb')
+            pickle.dump(extensions, pickle_file)
+            pickle_file.close()
+            
+            print("Extension has been added")
+            break
+
         else:
             print(choice)
             print("ERROR : INVALID OPTION")
