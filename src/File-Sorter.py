@@ -1,8 +1,9 @@
 import os
 import shutil
+import time
 from modules.extensions import *
 from modules.colours import *
-import time
+
 
 if __name__ == "__main__":
     os.system('cls')

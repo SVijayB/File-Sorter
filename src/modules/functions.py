@@ -1,21 +1,10 @@
 import pickle
 
-def writing():
-    pickle_file = open("assets/extensions_data.pkl", 'wb')
-    pickle.dump(extensions, pickle_file)
-    pickle_file.close()
-
-def reading():
-    pickle_file = open("assets/extensions_data.pkl", 'rb')
-    extensions = pickle.load(pickle_file)
-    pickle_file.close()
-    print(extensions)
-
-def main():
+def functions_main():
     print("1) Add an extension to an already existing category")
     print("2) Add an extension to a new catagory")
     print("3) Delete an extension")
-    print("4) View Extensions")
+    print("4) View extensions")
     choice = int(input("What would you like to do?\n> "))
         
     pickle_file = open("assets/extensions_data.pkl", 'rb')
@@ -68,13 +57,10 @@ def main():
     elif(choice == 4):
         for ex in extensions:
             print("• " + ex)
-        category = input("Which category does the extension belong to?(Type the exact name)\n> ").capitalize()
+        category = input("Which category does the extension belong to? (Type the exact name)\n> ").capitalize()
         for y in range(len(extensions[category])):
             print("\t->",extensions[category][y])
 
     else:
         print(choice)
         print("ERROR : INVALID OPTION")
-
-
-main()
