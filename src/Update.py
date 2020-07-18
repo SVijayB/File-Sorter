@@ -32,7 +32,7 @@ if __name__ == "__main__":
         elif(choice == 4):
             view_data(extensions)
         elif(choice == 5):
-            green("---- x Thanks for using File Sorter x ----")
+            green("\n---- x Thanks for using File Sorter x ----")
             grey("Press enter to exit...")
             input()
             break

@@ -1,9 +1,8 @@
 import os
 import shutil
 import time
-from modules.extensions import *
+import pickle
 from modules.colours import *
-
 
 if __name__ == "__main__":
     os.system('cls')
@@ -14,12 +13,18 @@ if __name__ == "__main__":
     version = open("../assets/version.txt" , "r").read()
     cyan("File Sorter | " + version)
     time.sleep(1)
+
+    pickle_file = open("../assets/extensions_data.pkl", 'rb')
+    extensions = pickle.load(pickle_file)
+    pickle_file.close()
+    
     while(True):
         destination = input("\nEnter the address of the folder you want to organise \n> ")
         try:
             os.chdir(destination)
         except:
             red("ERROR : INVALID LOCATION")
+            break
         files = os.listdir()
 
         for current_file in files:
