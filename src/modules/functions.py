@@ -55,6 +55,26 @@ def updating():
             print("Extension has been added")
             break
 
+        elif(choice == 3):
+            i = 1
+            for ex in extensions:
+                print(i,"\b) " + ex)
+                i = i+1
+            category = input("Which category does the extension belong to?(Type the exact name)\n> ").capitalize()
+            i = 1
+            for y in range(len(extensions[category])):
+                print(extensions[category][y])
+            del_extension = input("Enter the extension you want to delete. Eg: EXE,PNG,JPEG\n> ")
+            del_extension = ("." + del_extension)
+            extensions[category].remove(del_extension)
+
+            pickle_file = open("assets/extensions_data.pkl", 'wb')
+            pickle.dump(extensions, pickle_file)
+            pickle_file.close()
+            
+            print("Extension has been Deleted!")
+            break
+
         else:
             print(choice)
             print("ERROR : INVALID OPTION")
