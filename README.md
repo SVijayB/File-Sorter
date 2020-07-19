@@ -15,7 +15,9 @@
 
 ## Motivation
 
-We all know how hard it is to maintain a neat and organised folder. Especially when the number of files present is high, it becomes messy and hard to keep track of files. I built this application to specifically solve that problem. With File-Sorter you can easily sort your files into dedicated folders based on the type of the file. It makes organisation easy and saves a lot of time.
+We all know how hard it is to maintain a neat and organised folder. Especially when the number of files present is high, it becomes messy and hard to keep track of files. 
+
+I built this application to specifically solve that problem. With File-Sorter you can easily sort your files into dedicated folders based on the type of the file. It makes organisation easy and saves a lot of time.
 
 ## Installation
 
@@ -33,7 +35,7 @@ git clone https://github.com/SVijayB/File-Sorter.git
 
 Run the `File-Sorter.py` file present in the `src` folder.
 
-You can do that by just double clicking on the file if you have the *python launcher* installed. Else, **`cd/`** to the **`src`** folder and type `python File-Sorter.py`.
+You can do that by just double clicking on the file if you have the *python launcher* installed. Else, **`cd/`** to the **`src`** folder and type `python File-Sorter.py` on your terminal.
 
 Now, copy the address of the folder you want to organise/sort. Eg : `C:\Users\Username\Documents`
 
