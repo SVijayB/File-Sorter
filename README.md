@@ -69,8 +69,8 @@ If you wish to reset the collection of extensions back to its default state (Whe
 <br>
 
 <p align="center">
-    <img src="assets/images/After Sorting.PNG" alt="After Sorting">
-    <br>After Sorting
+    <img src="assets/images/After sorting.PNG" alt="After Sorting">
+    <br>After Sorting   
 </p>
 
 ## Contributing 
