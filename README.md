@@ -10,6 +10,7 @@
 - [Motivation](#Motivation)
 - [Installation](#Installation)
 - [Usage](#Usage)
+- [Demo](#Demo)
 - [Contributing](#Contributing)
 - [License](#License)
 
@@ -50,6 +51,27 @@ Using the **Update.py** file you can,
 - View extensions
 
 If you wish to reset the collection of extensions back to its default state (When installed), just launch the `Reset.py` file present in the `src` folder. 
+
+## Demo
+
+<p align="center">
+    <img src="assets/images/Demo.gif" alt="Demo">
+</p>
+
+<br>
+<br>
+
+<p align="center">
+    <img src="assets/images/Before sorting.PNG" alt="Before Sorting">
+    <br>Before Sorting
+</p>
+
+<br>
+
+<p align="center">
+    <img src="assets/images/After Sorting.PNG" alt="After Sorting">
+    <br>After Sorting
+</p>
 
 ## Contributing 
 
