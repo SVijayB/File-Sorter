@@ -11,6 +11,7 @@ if __name__ == "__main__":
     green("\n"+"-"*20)
     version = open("../assets/version.txt" , "r").read()
     cyan("File Sorter | " + version)
+    time.sleep(1)
     while(True):
         print("1) Add an extension to an already existing category")
         print("2) Add an extension to a new catagory")
