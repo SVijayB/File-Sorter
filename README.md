@@ -5,11 +5,25 @@
     <br>Built to help you sort your files into dedicated folders
 </p>
 
+---
+
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/SVijayB/File-Sorter.svg)](https://github.com/SVijayB/File-Sorter/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/SVijayB/File-Sorter.svg)](https://github.com/SVijayB/File-Sorter/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/SVijayB/File-Sorter.svg)](https://github.com/SVijayB/File-Sorter/graphs/contributors)
+
+[![GitHub license](https://img.shields.io/github/license/SVijayB/File-Sorter)](https://github.com/SVijayB/File-Sorter/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/SVijayB/File-Sorter.svg)](https://github.com/SVijayB/File-Sorter/releases)
+[![GitHub repo size](https://img.shields.io/github/repo-size/svijayb/File-Sorter)](https://github.com/SVijayB/File-Sorter)
+
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat)](https://github.com/SVijayB/File-Sorter/blob/master/.github/CODE_OF_CONDUCT.md)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/SVijayB/File-Sorter/blob/master/.github/CONTRIBUTING.md)
+
 ## Table of Contents
 
 - [Motivation](#Motivation)
 - [Installation](#Installation)
 - [Usage](#Usage)
+- [Demo](#Demo)
 - [Contributing](#Contributing)
 - [License](#License)
 
@@ -50,6 +64,27 @@ Using the **Update.py** file you can,
 - View extensions
 
 If you wish to reset the collection of extensions back to its default state (When installed), just launch the `Reset.py` file present in the `src` folder. 
+
+## Demo
+
+<p align="center">
+    <img src="assets/images/Demo.gif" alt="Demo">
+</p>
+
+<br>
+<br>
+
+<p align="center">
+    <img src="assets/images/Before sorting.PNG" alt="Before Sorting">
+    <br>Before Sorting
+</p>
+
+<br>
+
+<p align="center">
+    <img src="assets/images/After sorting.PNG" alt="After Sorting">
+    <br>After Sorting   
+</p>
 
 ## Contributing 
 
